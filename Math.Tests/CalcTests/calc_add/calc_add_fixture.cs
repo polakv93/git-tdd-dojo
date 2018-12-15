@@ -32,7 +32,7 @@ namespace Math.Tests.CalcTests.calc_add
 
         internal void assert_throw_exception()
         {
-            Assert.Throws<Exception>(() => _action.Invoke());
+            _action.Should().ThrowExactly<OverflowException>();
         }
     }
 }

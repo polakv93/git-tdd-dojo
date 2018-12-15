@@ -12,7 +12,10 @@ namespace Math
         }
 
         public void Add(int v) {
-            Result += v;
+            checked 
+            {
+                Result += v;
+            }
         }
     }
 }
