@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Math", "Math\Math.csproj", "{E5DB5FDC-11A9-4DEB-A150-20F894F4B849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathCalc", "MathCalc\MathCalc.csproj", "{E5DB5FDC-11A9-4DEB-A150-20F894F4B849}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Math.Tests", "Math.Tests\Math.Tests.csproj", "{996E0249-3420-498C-9827-F063D1439914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathCalc.Tests", "MathCalc.Tests\MathCalc.Tests.csproj", "{996E0249-3420-498C-9827-F063D1439914}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

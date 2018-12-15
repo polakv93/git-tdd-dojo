@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace Math.Tests.CalcTests.calc_init
+namespace MathCalc.Tests.CalcTests.calc_init
 {
     public class calc_init_test
     {

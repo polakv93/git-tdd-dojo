@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace Math.Tests.CalcTests.calc_divide
+namespace MathCalc.Tests.CalcTests.calc_divide
 {
     public class calc_divide_test
     {

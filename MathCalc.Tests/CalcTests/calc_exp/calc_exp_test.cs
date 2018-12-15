@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace Math.Tests.CalcTests.calc_exp
+namespace MathCalc.Tests.CalcTests.calc_exp
 {
-    class calc_exp_test
+    public class calc_exp_test
     {
         private calc_exp_fixture _fixture;
 

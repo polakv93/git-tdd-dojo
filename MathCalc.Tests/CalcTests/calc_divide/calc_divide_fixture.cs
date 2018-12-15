@@ -1,14 +1,15 @@
-﻿using FluentAssertions;
 using System;
+using FluentAssertions;
+using Xunit;
 
-namespace Math.Tests.CalcTests.calc_exp
+namespace MathCalc.Tests.CalcTests.calc_divide
 {
-    class calc_exp_fixture
+    public class calc_divide_fixture
     {
         private Calc _calc;
         private Action _action;
 
-        public calc_exp_fixture()
+        public calc_divide_fixture()
         {
             _calc = new Calc();
         }
@@ -20,7 +21,7 @@ namespace Math.Tests.CalcTests.calc_exp
 
         internal void act(int v)
         {
-            _action = () => _calc.Exp(v);
+            _action = () => _calc.Divide(v);
         }
 
         internal void assert_should_be(int v)

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Math
+namespace MathCalc
 {
     public class Calc
     {
@@ -25,7 +25,7 @@ namespace Math
 
         public void Exp(int v)
         {
-            Result = Math.Pow(Result, v);
+            Result = Convert.ToInt32(Math.Pow(Result, v));
         }
     }
 }

@@ -1,7 +1,7 @@
 using System;
 using FluentAssertions;
 
-namespace Math.Tests.CalcTests.calc_init
+namespace MathCalc.Tests.CalcTests.calc_init
 {
     internal class calc_init_fixture
     {

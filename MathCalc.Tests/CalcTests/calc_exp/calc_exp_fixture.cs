@@ -1,15 +1,14 @@
+﻿using FluentAssertions;
 using System;
-using FluentAssertions;
-using Xunit;
 
-namespace Math.Tests.CalcTests.calc_add
+namespace MathCalc.Tests.CalcTests.calc_exp
 {
-    public class calc_add_fixture
+    class calc_exp_fixture
     {
         private Calc _calc;
         private Action _action;
 
-        public calc_add_fixture()
+        public calc_exp_fixture()
         {
             _calc = new Calc();
         }
@@ -21,7 +20,7 @@ namespace Math.Tests.CalcTests.calc_add
 
         internal void act(int v)
         {
-            _action = () => _calc.Add(v);
+            _action = () => _calc.Exp(v);
         }
 
         internal void assert_should_be(int v)
@@ -30,9 +29,9 @@ namespace Math.Tests.CalcTests.calc_add
             _calc.Result.Should().Be(v);
         }
 
-        internal void assert_throw_exception()
+        internal void assert_should_throw_exceptin()
         {
-            _action.Should().ThrowExactly<OverflowException>();
+            _action.Should().Throw<Exception>();
         }
     }
 }

@@ -2,14 +2,14 @@ using System;
 using FluentAssertions;
 using Xunit;
 
-namespace Math.Tests.CalcTests.calc_divide
+namespace MathCalc.Tests.CalcTests.calc_add
 {
-    public class calc_divide_fixture
+    public class calc_add_fixture
     {
         private Calc _calc;
         private Action _action;
 
-        public calc_divide_fixture()
+        public calc_add_fixture()
         {
             _calc = new Calc();
         }
@@ -21,7 +21,7 @@ namespace Math.Tests.CalcTests.calc_divide
 
         internal void act(int v)
         {
-            _action = () => _calc.Divide(v);
+            _action = () => _calc.Add(v);
         }
 
         internal void assert_should_be(int v)
@@ -30,9 +30,9 @@ namespace Math.Tests.CalcTests.calc_divide
             _calc.Result.Should().Be(v);
         }
 
-        internal void assert_should_throw_exceptin()
+        internal void assert_throw_exception()
         {
-            _action.Should().Throw<Exception>();
+            _action.Should().ThrowExactly<OverflowException>();
         }
     }
 }
