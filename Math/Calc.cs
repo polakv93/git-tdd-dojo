@@ -22,5 +22,10 @@ namespace Math
         {
             Result /= v;
         }
+
+        public void Exp(int v)
+        {
+            Result = Math.Pow(Result, v);
+        }
     }
 }
