@@ -29,7 +29,7 @@ namespace MathCalc.Tests.CalcTests.calc_divide
 
             _fixture.act(0);
 
-            _fixture.assert_should_throw_exceptin();
+            _fixture.assert_should_throw_exception();
         }
 
         [Fact]

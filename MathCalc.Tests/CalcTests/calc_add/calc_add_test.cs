@@ -28,7 +28,7 @@ namespace MathCalc.Tests.CalcTests.calc_add
 
             _fixture.act(1);
 
-            _fixture.assert_throw_exception();
+            _fixture.assert_should_throw_exception();
         }
 
         [Fact]
@@ -38,7 +38,7 @@ namespace MathCalc.Tests.CalcTests.calc_add
 
             _fixture.act(-1);
 
-            _fixture.assert_throw_exception();
+            _fixture.assert_should_throw_exception();
         }
     }
 }
