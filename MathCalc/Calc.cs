@@ -18,6 +18,16 @@ namespace MathCalc
             }
         }
 
+        public void Percent(int v)
+        {
+            if (v > 100 || v < 0)
+            {
+                throw new ArgumentException();
+            }
+
+            Result *= v / 100;
+        }
+
         public void Divide(int v)
         {
             Result /= v;

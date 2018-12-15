@@ -5,7 +5,7 @@ using Xunit;
 
 namespace MathCalc.Tests.CalcTests.calc_percent
 {
-    class calc_percent_test
+    public class calc_percent_test
     {
         private calc_percent_fixture _fixture = new calc_percent_fixture();
         
