@@ -21,5 +21,25 @@ namespace Math.Tests.CalcTests.calc_divide
             _fixture.assert_should_be(4);
 
         }
+
+        [Fact]
+        public void throw_exception__when__division_by_zero()
+        {
+            _fixture.arrange(25);
+
+            _fixture.act(0);
+
+            _fixture.assert_should_throw_exceptin();
+        }
+
+        [Fact]
+        public void division_are_round__when__division_value_are_greate_than_the_division_multiplication()
+        {
+            _fixture.arrange(25);
+
+            _fixture.act(4);
+
+            _fixture.assert_should_be(6);
+        }
     }
 }

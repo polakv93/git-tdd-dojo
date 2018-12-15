@@ -17,5 +17,10 @@ namespace Math
                 Result += v;
             }
         }
+
+        public void Divide(int v)
+        {
+            Result /= v;
+        }
     }
 }

@@ -21,12 +21,18 @@ namespace Math.Tests.CalcTests.calc_divide
 
         internal void act(int v)
         {
-            _calc.Divide(v);
+            _action = () => _calc.Divide(v);
         }
 
         internal void assert_should_be(int v)
         {
+            _action.Invoke();
             _calc.Result.Should().Be(v);
+        }
+
+        internal void assert_should_throw_exceptin()
+        {
+            _action.Should().Throw<Exception>();
         }
     }
 }
