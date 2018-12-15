@@ -1,3 +1,5 @@
+using FluentAssertions;
+
 namespace Math.Tests
 {
     public class CalcFixture
@@ -21,7 +23,7 @@ namespace Math.Tests
 
         public void assert()
         {
-            calc.Result.ShouldBe(0);
+            calc.Result.Should().Be(0);
         }
     }
 }
