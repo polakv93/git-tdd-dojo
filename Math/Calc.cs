@@ -10,5 +10,9 @@ namespace Math
         {
             Result = v;
         }
+
+        public void Add(int v) {
+            Result += v;
+        }
     }
 }
