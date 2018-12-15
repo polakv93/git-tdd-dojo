@@ -30,5 +30,15 @@ namespace Math.Tests.CalcTests.calc_add
 
             _fixture.assert_throw_exception();
         }
+
+        [Fact]
+        public void throw_exception__when__overflow_min_value_for_type()
+        {
+            _fixture.arrange(int.MinValue);
+
+            _fixture.act(-1);
+
+            _fixture.assert_throw_exception();
+        }
     }
 }
