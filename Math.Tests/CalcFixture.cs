@@ -11,9 +11,13 @@ namespace Math.Tests
             calc = new Calc();
         }        
 
-        public void arrange_initial_data()
+        public void arrange_with_initial_data()
         {
             calc.SetInitial(0);
+        }
+
+        public void arrange_without_initial_data() {
+            
         }
 
         public void act()
