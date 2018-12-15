@@ -8,7 +8,7 @@ namespace Math.Tests
         [Fact]
         public void Test1()
         {
-
+            
         }
     }
 }
